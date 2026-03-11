@@ -1,10 +1,10 @@
 import "./App.css";
-import Calculator from "./components/Calculator";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="parent_section">
-      <Calculator />
+      <Counter />
     </div>
   );
 }

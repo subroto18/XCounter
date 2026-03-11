@@ -1,22 +1,19 @@
-import styles from "./Button.module.css";
-
+import { Component } from "react";
+import Styles from "./Button.module.css";
 type Props = {
-  value: string | number;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  key: string | number;
+  label: string;
+  onClick: () => void;
 };
 
-const Button = ({ value, onClick, key }: Props) => {
-  return (
-    <button
-      key={key}
-      className={`${styles.button}`}
-      onClick={(e) => onClick(e)}
-      value={value}
-    >
-      {value}
-    </button>
-  );
-};
+class Button extends Component<Props> {
+  render() {
+    const { label, onClick } = this.props;
+    return (
+      <button className={Styles.button} onClick={onClick}>
+        {label}
+      </button>
+    );
+  }
+}
 
 export default Button;

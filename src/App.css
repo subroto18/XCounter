@@ -19,12 +19,6 @@
 .heading {
   font-size: 28px;
 }
-.input_div {
-  margin-bottom: 10px;
-}
-.submit_btn {
-  margin-top: 10px;
-}
 
 @media (min-width: 601px) and (max-width: 1200px) {
   .parent {
